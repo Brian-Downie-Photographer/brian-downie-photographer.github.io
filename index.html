@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --bg: #f7f6f3;
+      --text: #111;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1400px;
+      padding: 60px 40px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0 0 8px 0;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #ddd;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+
+    .motion {
+      max-width: 800px;
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+
+    footer {
+      margin-top: 120px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1000px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Your Name</h1>
+      <div class="subtitle">Photography & Videography</div>
+    </header>
+
+    <section>
+      <h2>Portraits & Headshots</h2>
+      <div class="grid">
+        <img src="images/portraits/img01.jpg" loading="lazy" />
+        <img src="images/portraits/img02.jpg" loading="lazy" />
+        <img src="images/portraits/img03.jpg" loading="lazy" />
+        <img src="images/portraits/img04.jpg" loading="lazy" />
+        <img src="images/portraits/img05.jpg" loading="lazy" />
+        <img src="images/portraits/img06.jpg" loading="lazy" />
+        <img src="images/portraits/img07.jpg" loading="lazy" />
+        <img src="images/portraits/img08.jpg" loading="lazy" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Live Music</h2>
+      <div class="grid">
+        <img src="images/live-music/img01.jpg" loading="lazy" />
+        <img src="images/live-music/img02.jpg" loading="lazy" />
+        <img src="images/live-music/img03.jpg" loading="lazy" />
+        <img src="images/live-music/img04.jpg" loading="lazy" />
+        <img src="images/live-music/img05.jpg" loading="lazy" />
+        <img src="images/live-music/img06.jpg" loading="lazy" />
+        <img src="images/live-music/img07.jpg" loading="lazy" />
+        <img src="images/live-music/img08.jpg" loading="lazy" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Theatre</h2>
+      <div class="grid">
+        <img src="images/theatre/img01.jpg" loading="lazy" />
+        <img src="images/theatre/img02.jpg" loading="lazy" />
+        <img src="images/theatre/img03.jpg" loading="lazy" />
+        <img src="images/theatre/img04.jpg" loading="lazy" />
+        <img src="images/theatre/img05.jpg" loading="lazy" />
+        <img src="images/theatre/img06.jpg" loading="lazy" />
+      </div>
+    </section>
+
+    <section>
+      <h2>On-Set</h2>
+      <div class="grid">
+        <img src="images/on-set/img01.jpg" loading="lazy" />
+        <img src="images/on-set/img02.jpg" loading="lazy" />
+        <img src="images/on-set/img03.jpg" loading="lazy" />
+        <img src="images/on-set/img04.jpg" loading="lazy" />
+        <img src="images/on-set/img05.jpg" loading="lazy" />
+        <img src="images/on-set/img06.jpg" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="motion">
+      <h2>Film</h2>
+      <!-- Replace the src with your Vimeo embed -->
+      <iframe src="https://player.vimeo.com/video/XXXXXXXXX" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+      <a href="mailto:you@email.com">Email</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+      <a href="https://vimeo.com/yourprofile" target="_blank">Vimeo</a>
+    </footer>
+
+  </div>
+</body>
+</html>
